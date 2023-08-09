@@ -1,0 +1,29 @@
+@media only screen and (max-width:1024px) {
+   /* responsive-header 1024*/
+
+}
+@media screen and (max-width: 768px) {
+   /* responsive-header 768*/
+   header {
+      .contact-header {
+         justify-content: center;
+      }
+      .nav-header {
+         display: flex;
+         background-size: 100% 100%;
+         justify-content: center;
+      }
+      .list-header {
+         display: none;
+      }
+      .bar-header {
+         display: block;
+      }
+      .box-contact{
+         display: none;
+      }   
+   }
+}
+@media screen and (max-width: 500px) {
+   /* responsive-header 500*/
+}

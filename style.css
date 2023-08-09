@@ -2,18 +2,19 @@
    margin:0;
    padding:0;
    box-sizing: border-box;
-   font-family:Arial, Helvetica, sans-serif;
+   font-family:'Roboto';
 }
 body {
    width: 100%;
    height: auto;
 }
 header {
-   position: fixed;
-   top: 0;
    width: 100%;
    background-color: #00375C;
    height: 130px;
+}
+main {
+   width: 100%;
 }
 .background-header{
    background-color: #ffff;
@@ -31,6 +32,8 @@ button {
    color:#F5FBFF;
    padding: 1em;
    font-size: 1em;
+   margin: 30px 0;
+   white-space: nowrap;
 }
 header{
    .contact-header {
@@ -58,6 +61,14 @@ header{
       height: 50px;
       color: #C8F2FA;
    }
+   .list-header{
+      max-width: 100%;
+      min-width: 50%;
+   }
+   .list-header ul {
+      display: flex;
+      white-space: nowrap;
+   }
    .item-header {
       display: inline-block;
       line-height: 25px;
@@ -70,16 +81,86 @@ header{
       text-decoration: none;
       color: #C8F2FA;
       text-align: center;
+      white-space: nowrap;
    }
    .frame-header {
       display: flex;
       align-items: center;
       height: 50px;
+      position: relative;
+      white-space: nowrap;
+   }
+   .bar-header {
+      display: none;
    }
    .frame-header svg{
       fill:#C8F2FA;
       vertical-align: middle;
    }
 
-
+}
+main {
+   .slider {
+      background-image: url("./img/Banner\ intro\ 2.png");
+      background-size: 100% 100%;
+      min-height: 750px;
+      color:#F5FBFF;
+   }
+   .container-slider {
+      min-height: 750px;
+      display: flex;
+      align-items: center;
+   }
+   .slider .title-slider{
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 70px;
+   }
+   .slider .letter-title-slider {
+      font-size: 20px;
+      letter-spacing: 5px;
+      line-height: 24px;
+      padding: 10px 0;
+   }
+   .slider .text-slider {
+      width: 50%;
+      font-size: 15px;
+      line-height: 24px;
+      padding: 10px 0;
+   }
+   .container-slider .rotate-slider {
+      position:absolute;
+      right: 0;
+      rotate: 90deg;
+   }
+   .box-rotate-slider{
+      position: relative;
+      display: flex;
+      letter-spacing: 2px;
+   }
+   .item-rotate-slider {
+      margin: 0  5%;
+      text-align: center;
+      color: #F5FBFF;
+      opacity: 70%;
+   }
+   .item-rotate-slider:hover {
+      .hidden-item-rotate-slider {
+         display: inline-block;
+         color: #F5FBFF;
+         opacity: 100%;
+      };
+      .block-item-rotate-slider {
+         color: #F5FBFF;
+         opacity: 100%;
+      }
+   }
+   .item-rotate-slider .block-item-rotate-slider {
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+   }
+   .hidden-item-rotate-slider {
+      display: none;
+   }
 }
