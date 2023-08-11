@@ -1,8 +1,26 @@
 @media only screen and (max-width:1024px) {
    /* responsive-header 1024*/
-
+   main {
+      .slider .text-slider {
+         width: 60%;
+      }
+      .container-slider .rotate-slider {
+         left: 90%;
+      }
+      .bar-booking {
+         display: block;
+      } 
+      .tab-booking .item-booking a{
+         display:none;
+      }
+      .box-service {
+         grid-template-columns: 45% 45%;
+         justify-content: center;
+         gap: 30px;
+       }
+   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
    /* responsive-header 768*/
    header {
       .contact-header {
@@ -23,7 +41,61 @@
          display: none;
       }   
    }
+   main {
+      .booking-slider {
+         display: block;
+      }
+      .form-booking {
+         width: 100%;
+         border-radius: 0;
+      }
+      .transportation {
+         display: none;
+      }
+      .img-solution {
+         display: none;
+      }
+      .content-solution {
+         margin:0;
+         width: 100%;
+      }
+      .container-ourValue{
+         display: block;
+      }
+      .box-ourValue {
+         margin-bottom: 30px;
+      }
+      .section-service {
+         margin-top: 0 !important;
+       }
+       .container-service {
+         padding-top: 0 !important;
+       }
+       .line-facilities {
+         display: none;
+      }
+      .box-facilities {
+         grid-template-columns: auto auto;
+         justify-content:center;
+       }
+       .content-facilities{
+         grid-template-columns: 80%;
+         justify-content: center;
+         row-gap:20px;
+       }
+       .slider-facilities {
+         justify-content: center;
+      }
+   }
+   
 }
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
    /* responsive-header 500*/
+   main {
+      .box-service {
+         grid-template-columns: 90%;
+         justify-content: center;
+       }
+   }
+
 }
